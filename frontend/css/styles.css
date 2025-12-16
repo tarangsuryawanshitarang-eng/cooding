@@ -1,0 +1,46 @@
+
+/* universal */
+*{
+    color :green ; 
+    background-color:black;
+}
+
+
+/* element */
+h1{
+    color :blue ;
+    height:  100px;
+    width:   100px;
+    background-color: aquamarine;
+    /* border-radius: 50%; */
+}
+
+p{  
+    color:darkgreen;
+}            
+button{
+    color:rgb(132, 14, 14);
+    background-color:yellow;
+
+} 
+body{
+    background-color:black ;
+} 
+
+
+/* id has use  */
+
+#headingOne{
+    color:pink;
+}
+#headingtwo{
+    color:chocolate;
+}
+
+
+
+/* same class hs used  */
+
+.classone {
+    color : gold;
+}

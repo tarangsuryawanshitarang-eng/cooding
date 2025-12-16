@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- headder -->
+    <header>Html one short </header>
+    <hr>
+    <!-- this is called comment -->
+    <p>hello world !!</p>
+    <hr />
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <hr />
+     
+    <!-- main -->
+    <main>
+        this is main
+        <hr>
+        <!-- section -->
+
+        <section>
+            <!-- hear it will create a diff section in the web page -->
+            section for writing;
+        </section>
+        <hr>
+        <!-- article -->
+        <article>
+            <!-- space for article ,info like : about us  -->
+            section for article ;
+        </article>
+        <hr>
+        <!-- aside -->
+        <aside>
+            <!-- space for adds and will be neglected by the browser when reading web page -->
+            <!-- image using link -->
+            <img src="  https://th.bing.com/th/id/OIP._lW9B_bTecuuV7UjRQZTWAHaKe?o=7&cb=12rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt=" goku" height="100" />
+            <!-- image using relative linking  -->
+            <img src="/frontend/html/image.png" alt="Ultra Instinct" height="100" />
+            <hr />
+        </aside>
+    </main>
+    <br>
+    <!-- anchor tab -->
+    <a href="https://www.google.com" target="_main"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZEZ6fa7bPwCI4HE5583rhd3qiFNmf6kiPg&s"
+            height="50" alt="google" /></a><br />
+    <a href="/html/hello.html" target="_main"> hello </a>
+    <hr />
+    <!-- div the block function -->
+     <!-- div.group#100*10   ka output    -->
+      <!-- <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div>
+      <div class="group" id="100"></div> -->
+    <div>
+        <p>it is a block element use whole block element</p>
+        <pre>
+yaha jasa likho vasa aata          hai 
+            </pre>
+    </div>
+    <hr>
+    <!-- list -->
+    <!-- un ordered !! -->
+    <!-- li*5 enter : will create 5 list items instantly -->
+     <!-- <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li> -->
+    <ul>
+        <li>apple
+            <ul>
+                <li>color : red</li>
+                <li>season : winter</li>
+            </ul>
+        </li>
+        <li>mango
+            <ul>
+                <li>color : yellow</li>
+                <li>season : summer</li>
+            </ul>
+        </li>
+    </ul>
+    <ol>
+        <li>apple
+            <ol>
+                <li>color : red</li>
+                <li>season : winter</li>
+            </ol>
+        </li>
+        <li>mango
+            <ol>
+                <li>color : yellow</li>
+                <li>season : summer</li>
+            </ol>
+        </li>
+    </ol>
+        </ol>
+    </ol>
+    <hr>
+    <!-- tabel formation -->
+    <table>
+        <!-- caption -->
+        <caption>student data</caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>roll</th>
+                <!-- colspan -->
+                <th colspan="2">Exam_marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tarang</td>
+                <td>70</td>
+                <td>24</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Tanish</td>
+                <td>69</td>
+                <td>24</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>swpanil</td>
+                <td>68</td>
+                <td>14</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>ranjeet</td>
+                <td>49</td>
+                <td>17</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <!-- form -->   
+    <form action="random.cpp">
+        <!-- input -->
+        <input type="text" placeholder=" enter username"><br>
+        <input type="password" placeholder="enter password"><br>
+
+
+        select your semester <br>
+        <!-- label : check box ke text pe click karne par bhi!! select ho gayga -->
+        <!-- typr -> radio  means : checkbox -->
+        <label><input type="radio" value="semester 1 " name="class"> semester 1 <br></label>
+        <label>
+            <input type="radio" value="semester 2 " name="class"> semester 2 <br></label>
+        <label><input type="radio" value="semester 3 " name="class"> semester 3 <br></label>
+        <label>
+            <input type="radio" value="semester 4 " name="class"> semester 4 <br>
+        </label>
+        <br>
+        <hr>
+        select your favourite subject<br>
+
+        <label>
+            <input type="checkbox" value=" linear algebra" name="subject">linear algebra <br></label>
+            <label>
+                <input type="checkbox" value=" programing" name="subject">programinga <br></label>
+            <label>
+                <input type="checkbox" value=" DLD" name="subject">DLD <br></label>
+            <label><input type="checkbox" value=" electronics" name="subject">electronics <br>
+            </label><br>
+            <hr>
+            <!-- submit -->
+            <label for="city-select">select your city :</label>
+            <select id="city-select" name="city">
+                <option value="mumbai"> mumbai</option><br>
+                <option value="delhi"> delhi</option><br>
+                <option value="gujrat"> gujrat</option><br>
+                <option value="pune"> pune </option><br>
+            </select>
+            <hr>
+            <!-- text area -->
+            <textarea name="feedback" placeholder="feedback" rows="4"></textarea>
+            <hr>
+            <!-- submit -->
+            <input type="submit" value="submit">
+    </form>
+    <hr>
+    <iframe height="150" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=by09vG2DM6NvwGHd"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+<br>
+<hr>
+<footer>
+    contact at ph.no +91 898234**** <br />
+    email : xyz@ gmail.com
+</footer>
+
+</html>/html>

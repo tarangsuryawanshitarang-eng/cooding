@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0%;
+    color: white;
+}
+
+button {
+    background-color: #f08804;
+}
+
+a {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0f1111;
+    height: 60px;
+}
+
+#navigation {
+    background-color: #0f1111;
+    height: 60px;
+    
+    
+}
+
+#amazon {
+    color: #f08804;
+    font-size: 25px;
+}
+
+#content {
+    border: 2px solid black;
+    height: 550px;
+    color: black;
+}
+
+#box {
+    
+    padding:50px;
+    display: inline-block;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
