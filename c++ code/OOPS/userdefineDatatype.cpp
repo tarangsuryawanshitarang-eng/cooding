@@ -27,6 +27,19 @@ class Vector{
         }            
         arr[size++] = element;
     }
+    int get(int index){
+        if(index > size){
+            cout<<"invalid index"<<endl;
+             return -1;
+       }
+        if(index < 0){
+            cout<<"invalid index"<<endl;
+            return -1;
+        }
+        else{
+            return arr[index];
+        }
+    }
     void print(){
         for (int i = 0; i < size; i++){
             cout<<arr[i]<<" ";
