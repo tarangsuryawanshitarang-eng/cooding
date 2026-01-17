@@ -5,6 +5,11 @@ class student {
     public : 
     string name;
     int rollno;
+
+    // default constructor
+    student(){
+
+    }
     // constructor
     student ( string s , int r){
         name = s;
