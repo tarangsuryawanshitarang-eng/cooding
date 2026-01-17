@@ -13,4 +13,4 @@ cout<<"name "<<s.name<<endl;
 int main() {
   student s1= {"Tarang Suryawanshi", 70};
      print(s1);
-}
+}r
