@@ -23,7 +23,7 @@ int main()
         cout << "enter the searching character : ";
         cin >> n ;
 
-        cout << "the frequensy of " << n << " is : " << hass[n -'a'];
+        cout << "the frequensy of " << n << " is : " << hass[n -'a']<<endl;
 
         q--;
     }
