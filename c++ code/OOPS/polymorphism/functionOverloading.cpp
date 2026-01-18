@@ -2,6 +2,7 @@
 using namespace std;
 class polymorphism{
     public:
+// function overloading --> same name but different parameters
     void sum(int a , int b){
         cout<<"Sum of two integers : "<<a+b<<endl;
     }
