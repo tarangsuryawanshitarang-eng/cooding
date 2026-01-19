@@ -1,40 +1,31 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-
-    void bubble_sort(vector<int>& arr) {
-        int n = arr.size();
-        for (int i = n - 1; i >= 0; i--)
-         {
-            int didSwap = 0; //first ittration pe if no sort has occure , means array is sorted.
-
-            for (int j = 0; j <= i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    swap(arr[j], arr[j + 1]);  //Swap arr[j+1] with arr[i]
-                    didSwap = 1;
-                }
-            }
-            if (didSwap == 0) {
-                break;
-            }
-        }
-
-        cout << "After Using Bubble Sort:\n";
-        for (int num : arr) {
-            cout << num << " ";
-        }
-        cout << endl;
-    }
-
-
-int main() {
-    vector<int> arr = {13, 46, 24, 52, 20, 9};
-
-    cout << "Before Using Bubble Sort:\n";
-    for (int num : arr) {
-        cout << num << " ";
-    }
+int main()
+{
+    int arr[] = {4, 5, 6, 8, 2, 3, 1, 9, 7};
+    int n = sizeof(arr) / sizeof(int);
+    cout <<"Original Array : ";
+    for (int i = 0; i < n; i++) cout << arr[i] << " "; 
     cout << endl;
-   bubble_sort(arr);
-
-    return 0;
+    
+    for (int i = 0; i < n - 1; i++)
+    {
+        int swapcount = 0;
+        for (int j = 0; j < n - 1 - i; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                swap(arr[j], arr[j + 1]);
+                swapcount++;
+            }  
+        }
+        if (swapcount == 0)
+            break;
+    }
+    cout << "Sorted Array : ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
 }

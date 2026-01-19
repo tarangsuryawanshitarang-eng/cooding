@@ -1,51 +1,19 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
-class Solution {
-public:
-    // Function to sort the array using insertion sort
-    vector<int> insertionSort(vector<int>& nums) {
-        int n = nums.size(); // Size of the array 
-        
-        // For every element in the array 
-        for (int i = 1; i < n; i++) {
-        
-            int j = i ; 
-            
-            // Shift elements that are greater than key by one position
-            while (j >= 0 && nums[j-1] > nums[j]) {
-                nums[j + 1] = nums[j];
-                j--;
-            }
-            
-            nums[j + 1] = nums[j]; // Insert key at correct position
-        }
-        
-        return nums;
-    }
-};
-
-
 int main() {
-    // Create an instance of solution class
-    Solution solution;
-    
-    vector<int> nums = {13, 46, 24, 52, 20, 9};
-    
-    cout << "Before Using Insertion Sort: " << endl;
-    for (int num : nums) {
-        cout << num << " ";
+  int arr[] = {4, 5, 6, 8, 2, 3, 1, 9, 7};
+    int n = sizeof(arr) / sizeof(int);
+
+    cout<<"Original Array : ";
+    for(int a :arr)  cout<<a<<" ";
+
+    for(int i = 0;i<n-1;i++){
+        int j = i +1;
+        while(j>=1 && arr[j]>arr[j-1]) swap(arr[j--],arr[j-1]);
     }
+    
     cout << endl;
-
-    // Function call for insertion sort
-    nums = solution.insertionSort(nums);
-
-    cout << "After Using Insertion Sort: " << endl;
-    for (int num : nums) {
-        cout << num << " ";
-    }
-    cout << endl;
-
-    return 0;
+    cout << "Sorted Array : ";
+    for (int a : arr) cout << a << " ";
+    
 }
