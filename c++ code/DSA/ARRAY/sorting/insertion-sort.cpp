@@ -9,7 +9,7 @@ int main() {
 
     for(int i = 0;i<n-1;i++){
         int j = i +1;
-        while(j>=1 && arr[j]>arr[j-1]) swap(arr[j--],arr[j-1]);
+        while(j>=1 && arr[j]<arr[j-1]) swap(arr[j--],arr[j-1]);
     }
     
     cout << endl;
