@@ -1,0 +1,1 @@
+while(cur_ele->nxt && cur_ele->data == cur_ele->nxt->data)
